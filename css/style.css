@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+}
+
+div {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile > img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    grid-column: span 2;
+}
+
+#stars {
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    flex-direction: column;
+}
+
+.num {
+    background-color: lightgreen;
+}
+
+.msg {
+    background-color: rgb(130, 216, 130);
+}
+
+#pricing {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    grid-column: span 2;
+    flex-direction: column;
+}
